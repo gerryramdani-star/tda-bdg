@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesta Wirausaha Bandung 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1A233A',
+                            dark: '#0F172A',
+                            yellow: '#FFD700',
+                            pink: '#E91E63',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .bg-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+
+    <!-- Meta Pixel Code & Custom Tracking -->
+    <script>
+        // Base Meta Pixel Code (Ganti YOUR_PIXEL_ID dengan ID Pixel asli Anda nanti)
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // <- GANTI DI SINI
+        fbq('track', 'PageView'); // Track otomatis saat halaman dibuka
+
+        // Fungsi Tracking View Content (Mencegah Duplikasi)
+        function trackViewContent() {
+            if (!localStorage.getItem('pwb_viewcontent_tracked')) {
+                fbq('track', 'ViewContent');
+                localStorage.setItem('pwb_viewcontent_tracked', 'true');
+                console.log('Pixel Event Fired: ViewContent (1st time)');
+            } else {
+                console.log('Pixel Event Blocked: ViewContent (Already tracked)');
+            }
+        }
+
+        // Fungsi Tracking Lead (Mencegah Duplikasi)
+        function trackLead() {
+            if (!localStorage.getItem('pwb_lead_tracked')) {
+                fbq('track', 'Lead');
+                localStorage.setItem('pwb_lead_tracked', 'true');
+                console.log('Pixel Event Fired: Lead (1st time)');
+            } else {
+                console.log('Pixel Event Blocked: Lead (Already tracked)');
+            }
+        }
+    </script>
+    <!-- End Meta Pixel Code & Custom Tracking -->
+</head>
+<body class="font-sans bg-brand-dark text-slate-200 antialiased selection:bg-brand-yellow selection:text-brand-dark">
+
+    <!-- Sticky Header -->
+    <header class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="font-heading font-bold text-xl text-white tracking-tight">
+                TDA <span class="text-brand-yellow">BANDUNG</span>
+            </div>
+            <a href="#pricing" class="bg-brand-yellow text-brand-dark px-5 py-2 rounded-full font-bold text-sm hover:bg-yellow-400 transition transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]">
+                Daftar Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-brand-blue bg-pattern">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-brand-pink rounded-full mix-blend-multiply filter blur-[100px] opacity-40"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-[100px] opacity-30"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full border border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow font-semibold text-xs sm:text-sm tracking-wide">
+                📍 KHUSUS PENGUSAHA & PELAKU BISNIS DI BANDUNG
+            </div>
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                Tinggalkan Dulu Ruang Meeting Anda. Mari Bicara Bisnis di <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-yellow-200">Tengah Alam.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Capek dengan seminar bisnis yang isinya cuma teori satu arah? Waktunya <span class="text-white font-semibold">recharge energi</span> sambil membangun <span class="text-white font-semibold">networking daging</span> bersama ratusan pejuang bisnis lainnya.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#pricing" class="w-full sm:w-auto bg-brand-yellow text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(255,215,0,0.3)] flex items-center justify-center">
+                    Amankan Tiket Early Bird 👉
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-slate-400 flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-brand-pink" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                Terbuka untuk Umum | Kuota Terbatas
+            </p>
+        </div>
+    </section>
+
+    <!-- Agitation Section -->
+    <section class="py-20 bg-brand-dark border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
+                        Faktanya: Jaringan Bisnis Anda Adalah Penentu Skala Bisnis Anda.
+                    </h2>
+                    <p class="text-slate-300 mb-6 text-lg">Sebagai pengusaha, kita tahu persis rasanya:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-pink/20 flex items-center justify-center mt-1 mr-4">
+                                <span class="text-brand-pink text-sm font-bold">!</span>
+                            </div>
+                            <p class="text-slate-300">Mentok cari ide baru karena lingkungan pergaulan yang "itu-itu saja".</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-pink/20 flex items-center justify-center mt-1 mr-4">
+                                <span class="text-brand-pink text-sm font-bold">!</span>
+                            </div>
+                            <p class="text-slate-300">Butuh partner kolaborasi strategis tapi bingung cari di mana.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-pink/20 flex items-center justify-center mt-1 mr-4">
+                                <span class="text-brand-pink text-sm font-bold">!</span>
+                            </div>
+                            <p class="text-slate-300">Pikiran burnout di depan laptop, butuh healing tapi bisnis tidak bisa ditinggal.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-brand-blue p-8 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-yellow/10 rounded-bl-full"></div>
+                    <p class="text-xl font-semibold text-white leading-relaxed relative z-10 italic">
+                        "Bagaimana jika Anda bisa mendapatkan <span class="text-brand-yellow">Koneksi, Solusi Bisnis, dan Healing</span> sekaligus di satu tempat yang sama?"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-brand-blue relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-brand-pink font-bold tracking-widest uppercase mb-2">TDA Bandung Mempersembahkan</h2>
+            <h3 class="font-heading text-4xl md:text-5xl font-extrabold text-white mb-4">
+                PESTA WIRAUSAHA BANDUNG 2026
+            </h3>
+            <p class="text-2xl font-bold text-brand-yellow mb-16 tracking-wide">"CAMPING. CONNECTING. CLOSING."</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <!-- Card 1 -->
+                <div class="bg-brand-dark/50 p-6 rounded-xl border border-white/5 hover:border-brand-yellow/50 transition duration-300">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Halal Bihalal & Network</h4>
+                    <p class="text-slate-400">Menyambung silaturahmi bersama keluarga besar TDA Bandung dan bertemu sesama pejuang bisnis.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brand-dark/50 p-6 rounded-xl border border-white/5 hover:border-brand-pink/50 transition duration-300">
+                    <div class="text-4xl mb-4">🔥</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Real Insight</h4>
+                    <p class="text-slate-400">Dapat insight daging langsung dari belasan praktisi dan pelaku usaha (bukan sekadar motivator).</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brand-dark/50 p-6 rounded-xl border border-white/5 hover:border-blue-500/50 transition duration-300 lg:col-span-1 md:col-span-2">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h4 class="text-xl font-bold text-white mb-2">Deal & Kolaborasi</h4>
+                    <p class="text-slate-400">Buka peluang deal & kolaborasi di tempat, sambil recharge energi & mindset agar siap scale-up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Experience & Speakers -->
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">Bayangkan Pengalaman Ini...</h2>
+                <p class="text-slate-300 text-lg leading-relaxed">
+                    Anda tidak duduk kaku di kursi hotel. Anda ngobrol bisnis dan networking di tengah segarnya udara <strong class="text-brand-yellow">Natural Hills, Bandung Barat</strong>. 
+                    Malamnya kita adakan sesi <strong class="text-brand-pink">Deal Night</strong> yang hangat. Paginya, diskusi santai mencari insight baru sambil ngopi.
+                </p>
+            </div>
+
+            <!-- Image Placeholder representing the Poster -->
+            <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl max-w-4xl mx-auto bg-brand-dark">
+                <div class="relative">
+                    <img src="https://raw.githubusercontent.com/gerryramdani-star/tda-bdg/refs/heads/main/asset/pemateri---banner-LP.jpg" alt="Mentor dan Praktisi Bisnis PWB 2026" class="w-full h-auto object-cover opacity-90">
+                    <!-- Efek transisi halus (gradient) di perbatasan bawah gambar -->
+                    <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-brand-dark to-transparent"></div>
+                </div>
+                <!-- Teks dipindahkan ke bawah gambar agar tidak menutupi wajah -->
+                <div class="pt-0 pb-8 md:pb-12 px-4 text-center bg-brand-dark relative z-10">
+                    <h3 class="text-xl md:text-3xl font-bold text-white mb-2 drop-shadow-lg">Bersama Belasan Mentor & Praktisi Bisnis</h3>
+                    <p class="text-brand-yellow font-medium text-sm md:text-lg drop-shadow-md">Temukan mentor langsung dari para praktisi yang sudah terbukti di lapangannya!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-brand-blue border-t border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Investasi Terjangkau, ROI Maksimal.</h2>
+                <div class="inline-block bg-brand-pink text-white font-bold px-4 py-1 rounded-full text-sm">
+                    Harga Early Bird Berlaku
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Non Camp -->
+                <div class="bg-brand-dark rounded-2xl p-8 border border-white/10 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-2">🎟️ Paket Non-Camp</h3>
+                    <div class="text-3xl font-heading font-bold text-brand-yellow mb-6">Rp 99.000<span class="text-sm font-normal text-slate-400">/org</span></div>
+                    <ul class="space-y-3 mb-8 flex-grow">
+                        <li class="flex items-center text-slate-300"><svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Akses area networking</li>
+                        <li class="flex items-center text-slate-300"><svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Akses sesi materi utama</li>
+                        <li class="flex items-center text-slate-500"><svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>Tanpa menginap</li>
+                    </ul>
+                    <a href="https://bit.ly/DaftarPesertaPWB2026" target="_blank" onclick="trackViewContent()" class="w-full block text-center bg-white/10 text-white hover:bg-white/20 py-3 rounded-xl font-bold transition">Pilih Paket</a>
+                </div>
+
+                <!-- Nge-Camp (Highlight) -->
+                <div class="bg-gradient-to-b from-brand-dark to-brand-blue rounded-2xl p-8 border-2 border-brand-yellow relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(255,215,0,0.15)] flex flex-col">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-yellow text-brand-dark px-4 py-1 rounded-full text-sm font-bold">
+                        Paling Direkomendasikan
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 mt-2">🏕️ Paket Nge-Camp</h3>
+                    <div class="text-4xl font-heading font-bold text-brand-yellow mb-6">Rp 175.000<span class="text-sm font-normal text-slate-400">/org</span></div>
+                    <ul class="space-y-3 mb-8 flex-grow">
+                        <li class="flex items-center text-slate-300"><svg class="w-5 h-5 mr-3 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Full Experience 2 Hari 1 Malam</li>
+                        <li class="flex items-center text-slate-300"><svg class="w-5 h-5 mr-3 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Akses eksklusif Deal Night</li>
+                        <li class="flex items-center text-slate-300"><svg class="w-5 h-5 mr-3 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Networking pagi & kopi santai</li>
+                        <li class="flex items-center text-slate-300"><svg class="w-5 h-5 mr-3 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Termasuk fasilitas menginap</li>
+                    </ul>
+                    <a href="https://bit.ly/DaftarPesertaPWB2026" target="_blank" onclick="trackViewContent()" class="w-full block text-center bg-brand-yellow text-brand-dark hover:bg-yellow-400 py-4 rounded-xl font-bold text-lg transition shadow-lg">Amankan Seat!</a>
+                </div>
+
+                <!-- Camper Van -->
+                <div class="bg-brand-dark rounded-2xl p-8 border border-white/10 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-2">🚐 Paket Camper Van</h3>
+                    <div class="text-2xl font-heading font-bold text-white mb-6">Hubungi Admin</div>
+                    <ul class="space-y-3 mb-8 flex-grow">
+                        <li class="flex items-start text-slate-300">
+                            <svg class="w-5 h-5 mr-3 text-brand-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Punya Camper Van sendiri dan ingin bergabung di area khusus?
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/6281321373833" target="_blank" onclick="trackLead()" class="w-full block text-center border border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white py-3 rounded-xl font-bold transition">Tanya Admin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Final CTA -->
+    <footer class="bg-brand-dark pt-20 pb-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-6 mb-12">
+                <h3 class="text-xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                    <span class="text-red-500">⚠️</span> Peringatan: Kuota Sangat Terbatas!
+                </h3>
+                <p class="text-slate-300">
+                    Slot sangat terbatas dan pendaftaran sudah mulai terisi. Gerak cepat, karena peluang datang kepada mereka yang lebih siap. Jangan sampai kehabisan tempat!
+                </p>
+            </div>
+
+            <div class="mb-10">
+                <p class="text-xl font-semibold text-white mb-2">📅 18 - 19 April 2026</p>
+                <p class="text-slate-400">📍 Natural Hills, Bandung Barat</p>
+            </div>
+
+            <a href="https://bit.ly/DaftarPesertaPWB2026" target="_blank" onclick="trackViewContent()" class="inline-block w-full sm:w-auto bg-brand-yellow text-brand-dark px-10 py-5 rounded-full font-heading font-extrabold text-xl hover:bg-yellow-400 transition transform hover:scale-105 shadow-[0_10px_30px_rgba(255,215,0,0.3)] mb-16">
+                Ya, Saya Mau Ikut Pesta Wirausaha 2026!
+            </a>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-left">
+                    <p class="text-slate-400 font-semibold mb-2">Butuh bantuan pendaftaran?</p>
+                    <div class="flex flex-col gap-1 text-sm">
+                        <a href="https://wa.me/6281321373833" class="text-brand-yellow hover:underline flex items-center gap-2">
+                            📞 0813-2137-3833
+                        </a>
+                        <a href="https://wa.me/6287823971956" class="text-brand-yellow hover:underline flex items-center gap-2">
+                            📞 0878-2397-1956
+                        </a>
+                    </div>
+                </div>
+                <div class="text-slate-500 text-sm text-right">
+                    <p>© 2026 TDA Bandung.</p>
+                    <p>Terbuka untuk Umum.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
